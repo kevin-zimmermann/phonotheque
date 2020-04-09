@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trap - iPhonothèque</title>
+    <link rel="shortcut icon" href="iphono.ico">
+    <!--SCRIPT-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="styles/js/plyr.js"></script>
+    <script type="text/javascript" src="styles/js/canvas-menu.js"></script>
+    <!--CSS-->
+    <link href="https://cdn.plyr.io/3.5.6/plyr.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/phonotheque.css">
+    <link rel="stylesheet" href="styles/css/fa.css">
+
+</head>
+<body class="cat" id="trap">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="phonotheque.html">
+                    <img src="styles/image/logo/logo_iPhono.png" alt="iphonotheque">
+                </a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li> <a href="phonotheque.html">Acceuil</a></li>
+                    <li class="category"> Catégorie <span class="toggle-menu"><i class="fas fa-sort-down"></i></span>
+                        <ul class="menu-deroulant">
+                            <li><a href="style.html">Rap</a></li>
+                            <li><a href="style1.html">Trap</a></li>
+                            <li><a href="style2.html">Autre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="respon">
+                <div class="hamburger-menu">
+                    <i class="far fa-hamburger"></i>
+                </div>
+                <div class="logo-respon">
+                    <a href="phonotheque.html">
+                        <img src="styles/image/logo/logo_iPhono.png" alt="iphonotheque">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="background-title" id="particles-js">
+            <div class="height">
+                <div class="col h-100 p-4">
+                    <h1 class="page-title">Trap</h1>
+                </div>
+                <div class="col h-100 w-100">
+                </div>
+            </div>
+        </div>
+        <div class="block-container-audio ">
+            <div class="container">
+                <div class="column add-bottom">
+                    <div id="mainwrap">
+                        <div id="nowPlay">
+                            <span id="npAction">Pause...</span>
+                            <div class="info-artiste">
+                                <div class="img-audio">
+                                    <img src="" alt="" id="npImg">
+                                </div>
+                                <span id="npName">
+                                    <h3></h3>
+                                </span>
+                                <span id="npTitle"></span>
+                                <span id="npDescription">
+                                    <h4>Description :</h4>
+                                    <span class="npDec"></span>
+                                </span>
+                                <span id="npSocialNetwork">
+                                    <h4>Réseaux sociaux :</h4>
+                                    <span class="reseaux-sociaux"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="audiowrap">
+                            <div id="audio0">
+                                <audio id="audio1" preload controls>Ta musique !</audio>
+                            </div>
+                            <div id="tracks">
+                                <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                            </div>
+                        </div>
+                        <div id="plwrap">
+                            <ul id="plList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-cat">
+            <h3><i class="fas fa-bars"></i> Catégorie:</h3>
+            <ul>
+                <li>  <a href="style.html"> <i class="fas fa-music"></i>  Rap </a></li>
+                <li> <a href="style1.html"><i class="far fa-music"></i> Trap </a> </li>
+                <li> <a href="style2.html"><i class="fal fa-music"></i>  Autre </a> </li>
+            </ul>
+
+        </div>
+        Copyright© by KB Nueve
+    </footer>
+    <div class="CanvasMenu">
+        <div class="menu-nav-left"></div>
+        <div class="menu-nav-right">
+            <div class="CanvasMenu-content">
+                <div class="CanvasMenu-header">
+                    Menu
+                    <span class="CanvasMenu-close"></span>
+                </div>
+                <div class="CanvasMenu-nav">
+                    <a href="phonotheque.html"><i class="far fa-home"></i> Accueil</a>
+                </div>
+                <div class="CanvasMenu-nav CanvasMenu-cat is-select">
+                    <div class="CanvasMenu-titre">
+                        <i class="fas fa-bars"></i> catégorie <span class="CanvasMenu-open"></span>
+                    </div>
+                    <div class="CanvasMenu-all-item">
+                        <div class="CanvasMenu-item">
+                            <a href="style.html"><i class="fas fa-music"></i> Rap</a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="style1.html"><i class="far fa-music"></i> Trap</a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="style2.html"><i class="fal fa-music"></i> Autre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="styles/js/particles.js"></script>
+<script src="styles/js/app.js"></script>
+<script>
+    var tracks = [{
+        "track": 1,
+        "name": "50 Cent - Candy Shop",
+        "NameChant" : "Onderk",
+        "duration": "2:58",
+        "file": "50-cent-candy-shop-onderkoffer-remix",
+        "img" : "styles/image/50_cent_candy_shop.webp",
+        "description" : "<p><b>Download/Stream :</b> <a href=\"https://soundcloud.com/onderkoffer/candyshop\"><i class=\"fas fa-download\"></i></a></p>",
+        "oneSocialNetwork" : true,
+        "socialNetwork" : [{
+            'instagram': 'https://www.instagram.com/onderkoffermusic/',
+        }]
+    }, {
+        "track": 2,
+        "name": "Rick and Morty - Evil Morty Theme Song ",
+        "NameChant" : "Feewet",
+        "duration": "2:37",
+        "file": "rick-and-morty-evil-morty-theme-song-feewet-trap-remix",
+        "img" : "styles/image/rick_and_morty.webp",
+        "description" : "<p><b>Chanson originale :</b> Blonde rousse - Pour la coda endommagée</p>",
+        "oneSocialNetwork" : true,
+        "socialNetwork" : [{
+            'instagram': 'https://www.instagram.com/feewet/',
+        }]
+    }];
+</script>
+<script src="styles/js/jsaudio.js"></script>
+</html>

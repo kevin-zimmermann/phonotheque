@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap - iPhonothèque</title>
+    <link rel="shortcut icon" href="iphono.ico">
+    <!--SCRIPT-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="styles/js/plyr.js"></script>
+    <script type="text/javascript" src="styles/js/canvas-menu.js"></script>
+    <!--CSS-->
+    <link href="https://cdn.plyr.io/3.5.6/plyr.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/phonotheque.css">
+    <link rel="stylesheet" href="styles/css/fa.css">
+</head>
+<body class="cat" id="rap">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="phonotheque.html">
+                    <img src="styles/image/logo/logo_iPhono.png" alt="iphonotheque">
+                </a>
+            </div>
+            <div class="link">
+                <ul>
+                    <li> <a href="phonotheque.html">Acceuil</a></li>
+                    <li class="category"> Catégorie <span class="toggle-menu"><i class="fas fa-sort-down"></i></span>
+                        <ul class="menu-deroulant">
+                            <li><a href="style.html">Rap</a></li>
+                            <li><a href="style1.html">Trap</a></li>
+                            <li><a href="style2.html">Autre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="respon">
+                <div class="hamburger-menu">
+                    <i class="far fa-hamburger"></i>
+                </div>
+                <div class="logo-respon">
+                    <a href="phonotheque.html">
+                        <img src="styles/image/logo/logo_iPhono.png" alt="iphonotheque">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="background-title" id="particles-js">
+            <div class="height">
+                <div class="col h-100 p-4">
+                    <h1 class="page-title">Rap</h1>
+                </div>
+                <div class="col h-100 w-100">
+                </div>
+            </div>
+        </div>
+        <div class="block-container-audio">
+            <div class="container">
+                <div class="column add-bottom">
+                    <div id="mainwrap">
+                        <div id="nowPlay">
+                            <span id="npAction">Pause...</span>
+                            <div class="info-artiste">
+                                <div class="img-audio">
+                                    <img src="" alt="" id="npImg">
+                                </div>
+                                <span id="npName">
+                                    <h3></h3>
+                                </span>
+                                <span id="npTitle"></span>
+                                <span id="npDescription">
+                                    <h4>Description :</h4>
+                                    <span class="npDec"></span>
+                                </span>
+                                <span id="npSocialNetwork">
+                                    <h4>Réseaux sociaux :</h4>
+                                    <span class="reseaux-sociaux"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="audiowrap">
+                            <div id="audio0">
+                                <audio id="audio1" preload controls>Ta musique !</audio>
+                            </div>
+                            <div id="tracks">
+                                <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                            </div>
+                        </div>
+                        <div id="plwrap">
+                            <ul id="plList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-cat">
+            <h3><i class="fas fa-bars"></i> Catégorie:</h3>
+            <ul>
+                <li>  <a href="style.html"> <i class="fas fa-music"></i>  Rap </a></li>
+                <li> <a href="style1.html"><i class="far fa-music"></i> Trap </a> </li>
+                <li> <a href="style2.html"><i class="fal fa-music"></i>  Autre </a> </li>
+            </ul>
+
+        </div>
+        Copyright© by KB Nueve
+    </footer>
+    <div class="CanvasMenu">
+        <div class="menu-nav-left"></div>
+        <div class="menu-nav-right">
+            <div class="CanvasMenu-content">
+                <div class="CanvasMenu-header">
+                    Menu
+                    <span class="CanvasMenu-close"></span>
+                </div>
+                <div class="CanvasMenu-nav">
+                    <a href="phonotheque.html"><i class="far fa-home"></i> Accueil</a>
+                </div>
+                <div class="CanvasMenu-nav CanvasMenu-cat is-select">
+                    <div class="CanvasMenu-titre">
+                        <i class="fas fa-bars"></i> catégorie <span class="CanvasMenu-open"></span>
+                    </div>
+                    <div class="CanvasMenu-all-item">
+                        <div class="CanvasMenu-item">
+                            <a href="style.html"><i class="fas fa-music"></i> Rap</a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="style1.html"><i class="far fa-music"></i> Trap</a>
+                        </div>
+                        <div class="CanvasMenu-item">
+                            <a href="style2.html"><i class="fal fa-music"></i> Autre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="styles/js/particles.js"></script>
+<script src="styles/js/app.js"></script>
+<script>
+        var tracks = [{
+                "track": 1,
+                "name": "Taedium",
+                "NameChant" : "SEB",
+                "duration": "4:40",
+                "file": "seb-taedium-clip-officiel",
+                "img" : "styles/image/SEB_Taedium.jpeg",
+                "description" : "<p><b>Disponible sur Spotify, Deezer, Apple Music etc... :</b> <a href=\"https://seb.lnk.to/Taedium\" target=\"_blank\">Taedium</a></p>\n" +
+                    "                                <p><b>Réalisation :</b> David Tomaszewski</p>\n" +
+                    "                                <p><b>Production :</b> Ninaa Ltd</p>\n" +
+                    "                                <p><b>Auteur, Interprète :</b> Seb</p>\n" +
+                    "                                <p><b>Compositeur :</b> EightySeven</p>\n" +
+                    "                                <p><b>La Real / Belem Music</b></p>",
+                "oneSocialNetwork" : false,
+                "socialNetwork" : [{
+                    'instagram' : 'http://instagram.com/seblafrite',
+                    'twitter' : 'http://www.twitter.com/Seb_Frit'
+            }]
+            }, {
+                "track": 2,
+                "name": "Radioactif ",
+                "NameChant" : "Lonnie",
+                "duration": "2:06",
+                "file": "radioactif-audio",
+                "img" : "styles/image/Radioactif.webp",
+                "description" : "<p>C’est moi Lonni Potter, y a pas de stupéfix !</p>\n" +
+                    "                                <p>J’ai un compte secondaire pour mater vos nudes avec ma meuf comme si c’était Netflix !</p>\n" +
+                    "                                <p>Elle m’a dit d’te dire de prendre les photos sans rentrer l’ventre la gamine</p>\n" +
+                    "                                <p>Éteins les lumières et je te frai voir ce qu’il y a de plus noir dans ma tête quand j’rap c’est comme une dose d’insuline</p>\n" +
+                    "                                <p>Instagrammeuse qui veut tout d’une renoie sauf sa couleur de peau,</p>\n" +
+                    "                                <p>Avantages physiques sans inconvénients sociaux</p>\n" +
+                    "                                <p>Negro, tu fais le guerrier sur les réseaux alors que tu te moques d’elles à Château d’Eau !</p>\n" +
+                    "                                <p>Demande à Rolex si les temps sont durs</p>\n" +
+                    "                                <p>Ou bien demande à mon ex si les tensions durs,</p>\n" +
+                    "                                <p>En tout cas, faut savoir que nos amis en communs baissent la tête quand j’les croisent dans la ure</p>\n" +
+                    "                                <p>J’ai pas pompé pour arriver à mes fins</p>\n" +
+                    "                                <p>Si j’ai faim c’est pas toi qui m’achètera du pain</p>\n" +
+                    "                                <p>Douceur violente, je suis cet oxymore</p>\n" +
+                    "                                <p>Tout en contradiction à chaque fin de ce-mor</p>\n" +
+                    "                                <p>C’est une affaire à pas manquer</p>\n" +
+                    "                                <p>Le rap c’est les affaires faut pas s’manquer</p>\n" +
+                    "                                <p>J’suis le genre qui n’aime pas qu’on touche à ses affaires, si je perce, ce sera un acte manqué</p>\n" +
+                    "                                <p>J’pose des CV à la NASA</p>\n" +
+                    "                                <p>Parce que le rap c’est devenu naze</p>\n" +
+                    "                                <p>Plus d’écart à combler</p>\n" +
+                    "                                <p>Le temps n’est plus compter</p>\n" +
+                    "                                <p>Fonsdé, encore un vers c’est l’extase !</p>\n" +
+                    "                                <p>Sourd quand tu critiques mais t’écoutes pas mes sons</p>\n" +
+                    "                                <p>Tu ferais un bon disciple chez Hardisson</p>\n" +
+                    "                                <p>Je viens pas de tiekson!</p>\n" +
+                    "                                <p>Seulement quand la nuit tombe c’est là que viennent toutes mes idées bressom !</p>\n" +
+                    "                                <p>Je fais du sale sur la prod</p>\n" +
+                    "                                <p>On m’appelle pour un autre Épisode !</p>\n" +
+                    "                                <p>Je visualise mes ennemis entrain d’upload mes derniers sons sur leurs iPod</p>\n" +
+                    "                                <p>Trop peu pour moi, j’pars en Exode</p>\n" +
+                    "                                <p>Pas d’ami, j’ai fermé toutes les portes</p>\n" +
+                    "                                <p>Pas la même vie, pas le même génie, ils iront autopsier mon inspi à la morgue</p>\n" +
+                    "                                <p>Je deviens consciencieux ça me va si bien</p>\n" +
+                    "                                <p>En manque de carburant, j’ai refait le plein,\n" +
+                    "                                <p>Je te pleins, t’es comme une girouette</p>\n" +
+                    "                                <p>Un coup tu m’aimes, un coup tu me haines, flemme, j’ai que d’la peine, veille dégaine, moi aussi j’ai la haine, j’ai les veines qui ressortent comme le M de Végéta</p>\n" +
+                    "                                <p>Comme un alien, je viens en terre inconnu dans la Game, juste pour vous montrer comment faire</p>\n" +
+                    "                                <p>Time</p>",
+                "oneSocialNetwork" : false,
+                "socialNetwork" : [{
+                    'instagram' : 'https://www.instagram.com/LONNIZER/',
+                    'twitter' : 'https://twitter.com/LONNIZER'
+                }]
+            }];
+</script>
+<script src="styles/js/jsaudio.js"></script>
+</html>
